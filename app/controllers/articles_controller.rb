@@ -47,4 +47,5 @@ include ArticlesHelper
 		tags.join(", ")
 	end
 	
+	before_filter :require_login, only: [:new, :create, :edit, :update, :destroy]
 end
